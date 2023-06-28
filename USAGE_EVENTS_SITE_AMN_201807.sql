@@ -1,0 +1,123 @@
+select *
+from USAGE_EVENTS  partition(D20180701_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180702_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180703_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180704_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180705_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180706_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180707_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180708_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180709_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180710_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180711_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180712_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180713_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180714_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180715_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180716_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180717_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180718_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180719_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180720_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180721_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180722_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180723_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180724_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180725_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180726_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180727_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180728_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180729_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180730_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')
+union all
+select *
+from USAGE_EVENTS  partition(D20180731_USAGE_EVENTS)
+where CELL_ID IN('611-04-70-65081','611-04-70-65091')

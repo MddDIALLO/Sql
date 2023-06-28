@@ -1,0 +1,179 @@
+CREATE OR REPLACE PROCEDURE REPORT_USER.IT_MIS_GADD_DEL_4_REGUL1 IS
+ 
+BEGIN 
+
+
+/*delete FROM  report_user.IT_MIS_RGS90_CHURN_GROSSADD 
+WHERE report_date BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy')
+AND RGS_TYPE='RECO';
+                     
+commit;*/ 
+
+/*
+----        and MSISDN in(
+----                      select '224'||ACCOUNT_MSISDN
+----                      from it_dr_in_status_subscribers
+----                      where FIRST_CALL_DATE =TO_DATE('04/10/2017','dd/mm/yyyy')
+----                     );
+----                     
+----commit;  
+             */       
+                     
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FIRST_CALL_REPORT a
+WHERE a.DAILY_CONSO BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_WINBACK b
+WHERE b.FC_DATE_RECO BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FISRT_CALL_GLOBAL d
+WHERE d.ACTIVATION_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+ 
+DELETE FROM REPORT_USER.IT_MIS_DAILY_WINBACK_GLOBAL e
+WHERE e.FC_DATE_RECO BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_GLOBAL f
+WHERE f.DAILY_CONSO BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_GROSS_ADD g
+WHERE g.DAILY_CONSO BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_REPARTITION h
+WHERE h.FC_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_GROSS_ADD_ADJUST i
+WHERE i.ACTIVATION_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_REPART_REPT c
+WHERE c.DAILY_CONSO BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_REPART_GLOBAL l
+WHERE l.ACTIVATION_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_REPARTITION2 m
+WHERE m.FC_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FIRST_CALL_ADJUST n
+WHERE n.ACTIVATION_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_GLOBALH j
+WHERE j.ACTIVATION_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM REPORT_USER.IT_MIS_DAILY_FC_REPART_GLOBALH o
+WHERE o.ACTIVATION_DATE BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+/*
+DELETE FROM IT_MK_DAILY_FC_REPART_GLOBAL@MKDBLINK p
+WHERE p.ACTIVATION_DATE BETWEEN TO_DATE('20/09/2016','dd/mm/yyyy') and TO_DATE('20/09/2016','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM IT_MK_DAILY_FISRT_CALL_GLOBAL@MKDBLINK k
+WHERE k.ACTIVATION_DATE BETWEEN TO_DATE('20/09/2016','dd/mm/yyyy') and TO_DATE('20/09/2016','dd/mm/yyyy');
+
+COMMIT; 
+
+*/
+
+delete FROM REPORT_USER.IT_MIS_DAILY_FC_INITIALBALANCE
+WHERE daily_conso BETWEEN TO_DATE('17/07/2018','dd/mm/yyyy') and TO_DATE('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+/*
+delete FROM IT_MK_DAILY_FIRST_CALL_BALANC2@MKDBLINK
+WHERE daily_conso BETWEEN TO_DATE('20/09/2016','dd/mm/yyyy') and TO_DATE('20/09/2016','dd/mm/yyyy');
+
+COMMIT;
+
+*/
+/*
+  IT_MIS_TRACKING_FC_NEW_TMP;
+  
+  delete FROM  report_user.IT_MIS_RGS90_CHURN_GROSSADD 
+        WHERE report_date = TO_DATE('04/10/2017','dd/mm/yyyy')
+        AND RGS_TYPE='RECO'
+        and MSISDN in(
+                      select '224'||ACCOUNT_MSISDN
+                      from it_dr_in_status_subscribers
+                      where FIRST_CALL_DATE =TO_DATE('04/10/2017','dd/mm/yyyy')
+                     );
+                     
+commit; 
+*/
+/*
+IT_MIS_TRACKING_FC_NEW_TMP; 
+--IT_MIS_TRACKING_FC_NEW_TMP1;
+--IT_MIS_TRACKING_FC_NEW_TMP2; 
+--IT_MIS_TRACKING_FC_NEW_TMP3;
+--IT_MIS_TRACKING_FC_NEW_TMP4;
+--IT_MIS_TRACKING_FC_NEW_TMP5;  
+--IT_MIS_TRACKING_FC_NEW_TMP6;
+--IT_MIS_TRACKING_FC_NEW_TMP7;  
+--IT_MIS_TRACKING_FC_NEW_TMP8;   
+--IT_MIS_TRACKING_FC_NEW_TMP9; 
+
+DELETE FROM IT_MK_DAILY_FC_REPART_GLOBAL@MKDBLINK p
+WHERE p.ACTIVATION_DATE BETWEEN to_date('17/07/2018','dd/mm/yyyy') and to_date('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+insert into IT_MK_DAILY_FC_REPART_GLOBAL@MKDBLINK
+select * FROM REPORT_USER.IT_MIS_DAILY_FC_REPART_GLOBAL p
+WHERE p.ACTIVATION_DATE BETWEEN to_date('17/07/2018','dd/mm/yyyy') and to_date('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+DELETE FROM IT_MK_DAILY_FISRT_CALL_GLOBAL@MKDBLINK k
+WHERE k.ACTIVATION_DATE BETWEEN to_date('17/07/2018','dd/mm/yyyy') and to_date('17/07/2018','dd/mm/yyyy');
+
+COMMIT; 
+
+insert into IT_MK_DAILY_FISRT_CALL_GLOBAL@MKDBLINK
+select * FROM REPORT_USER.IT_MIS_DAILY_FISRT_CALL_GLOBAL k
+WHERE k.ACTIVATION_DATE BETWEEN to_date('17/07/2018','dd/mm/yyyy') and to_date('17/07/2018','dd/mm/yyyy');
+
+COMMIT; 
+
+DELETE FROM IT_MK_DAILY_FIRST_CALL_BALANC2@MKDBLINK
+WHERE daily_conso BETWEEN to_date('17/07/2018','dd/mm/yyyy') and to_date('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+
+insert into IT_MK_DAILY_FIRST_CALL_BALANC2@MKDBLINK
+select * FROM REPORT_USER.IT_MK_DAILY_FIRST_CALL_BALANC2
+WHERE daily_conso BETWEEN to_date('17/07/2018','dd/mm/yyyy') and to_date('17/07/2018','dd/mm/yyyy');
+
+COMMIT;
+*/
+END;
+/
